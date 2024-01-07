@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./vendors/css/master.css">
+
+</head>
+
+<body>
+
+
+    <main>
+        <div class="container  ">
+            <div class="row-1 flx-wrp wid1 ln-hgt">
+                <div class="col-4 info wid2 wid4  mb-3 ">
+                    <label for="userName" class="  mb-1 wid2">Student's Name</label>
+                    <input type="text" placeholder="Inter Your Name" class="wid1 ln-hgt radius-2 " id="userName">
+                </div>
+                <div class="col-4  info  wid2 wid4 mb-3 ">
+                    <label for="email" class=" mb-1 wid2">Student's Email</label>
+                    <input type="text" placeholder="Inter Your Email" class="wid1 ln-hgt radius-2 " id="email">
+                </div>
+                <div class="col-4  info wid2 wid4 mb-3 ">
+                    <label for="id" class=" mb-1 wid2">Student's ID</label>
+                    <input type="text" placeholder="Inter Your ID" class="wid1 ln-hgt radius-2" id="Id">
+                </div>
+                <div class="col-4  info  wid2 wid4 ">
+                    <label for="text" class=" mt-4 wid2 "> Student's Image</label>
+                    <input type="text" placeholder="Image URL" class="wid1 ln-hgt radius-2" id="imgUrl">
+                </div>
+                <div class="col-4 info  wid2 wid4 ">
+                    <label for="gender" class="form-control wid1 51 mt-4 wid2 hgt radius-2">Student's gender</label>
+                    <select name="" id="gender" class="wid1 ln-hgt radius-2">
+                        <option disabled selected class="wid1 ">Select Gender...</option>
+                        <option value="Male" class="">Male</option>
+                        <option value="Female" class="">Female</option>
+                    </select>
+                </div>
+                <div class="col-4 wid5 info wid2 wid4  ">
+                    <label for="year" class="form-control wid1  mb-1 mt-4 wid2 hgt radius-2">Student's Year</label>
+                    <select name="" id=" Year" class="wid1 ln-hgt radius-2">
+                        <option disabled selected class="">Select Year...</option>
+                        <option value="year1">year1</option>
+                        <option value="year2">year2</option>
+                        <option value="year3">year3</option>
+                        <option value="year4">year4</option>
+                    </select>
+                </div>
+            </div>
+            <div class="title txt-algn wid1">
+                <h2>Choose your Academic Majors </h2>
+            </div>
+            <div class="row ln-hgt wid1" id="firstTerm">
+                <h5 class="txt-algn wid1">First Term</h5>
+                <div class="row flx-nwrp">
+                    <div class=" col-4 wid5 wid2 wid3 wid4 mb-3 mr-2 ">
+                        <label for="subject" class="wid1 mb-3">First Subject</label>
+                        <input type="subject" placeholder="subject" id="subject1" class="wid1 ln-hgt radius-2">
+                    </div>
+                    <div class="col-4 wid5 wid2 wid3 wid4 mb-3 mr-2 ">
+                        <label for="subject" class="wid1 mb-3">Second Subject</label>
+                        <input type="subject" placeholder="subject" id="subject2" class="wid1 ln-hgt radius-2">
+                    </div>
+                    <div class="col-4 wid5 wid2 wid3 wid4 mb-3 mr-2 ">
+                        <label for="subject" class="wid1 mb-3">Third Subject</label>
+                        <input type="subject" placeholder="subject" id="subject3" class="wid1 ln-hgt radius-2">
+                    </div>
+                    <div class="col-4 wid5 wid2 wid3 wid4 mb-3 mr-2">
+                        <label for="subject" class="wid1 mb-3">Fourth Subject</label>
+                        <input type="subject" placeholder="subject" id="subject4" class="wid1 ln-hgt radius-2">
+                    </div>
+                </div>
+            </div>
+            <div class="row wid1 ln-hgt" id="secondTerm">
+                <h5 class="txt-algn  wid1 wid4">Second Term</h5>
+                <div class="row wid1 flx-nwrp">
+                    <div class="col-4 wid5 wid2 wid3 wid4 mb-3 mr-2 ">
+                        <label for="subject" class="wid1">First Subject</label>
+                        <input type="subject" placeholder="subject" id="subject1" class="wid1 ln-hgt radius-2">
+                    </div>
+                    <div class="col-4 wid5 wid2 wid3 wid4 mb-3 mr-2">
+                        <label for="subject" class="wid1">Second Subject</label>
+                        <input type="subject" placeholder="subject" id="subject2" class="wid1 ln-hgt radius-2">
+                    </div>
+                    <div class="col-4 wid5 wid2 wid3 wid4 mb-3 mr-2 ">
+                        <label for="subject" class="wid1">Third Subject</label>
+                        <input type="subject" placeholder="subject" id="subject3" class="wid1 ln-hgt radius-2">
+                    </div>
+                    <div class="col-4 wid5 wid2 wid3  wid4 mb-3 mr-2">
+                        <label for="subject" class="wid1">Fourth Subject</label>
+                        <input type="subject" placeholder="subject" id="subject4" class="wid1 ln-hgt radius-2">
+                    </div>
+                </div>
+            </div>
+            <div class=" btn wid1  txt-algn ln-hgt mt-5 mb-1">
+                <button class="Submit" id="submit_student" onclick="AddStudent()">Submit</button>
+            </div>
+        </div>
+        <h2 class="wid1 mb-1 mt-5 txt-algn   ">Student's List</h2>
+        <div class="section fnt-clr flx-wrp " id="students">
+            <div class="row ">
+                <div class="card ">
+                    <img class="wid1" src="./img/pexels-anastasiya-gepp-1462630.jpg" class="img " alt="">
+                    <h4>Dalia Ahmed</h4>
+                    <p>Email : Dalia1993@gmail.com</p>
+                    <p>ID: 1007</p>
+                    <p>Year: 1</p>
+                    <p>Gender: Female</p>
+                </div>
+            </div>
+            <div class="wid7 table">
+                <table border="2" class="txt-algn wid1 ml-5">
+                    <thead>
+                        <tr>
+                            <th colspan="4" class="txt-algn ">First Term</th>
+
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>Subject1</th>
+                            <th>Subject2</th>
+                            <th>Subject3</th>
+                            <th>Subject4</th>
+
+                        </tr>
+                        <tr>
+                            <td>Ai</td>
+                            <td>Math1</td>
+                            <td>Math2</td>
+                            <td>Assenbly</td>
+
+                        </tr>
+                    </tbody>
+                </table>
+                <table border="2" class="txt-algn wid1 ml-5">
+                    <thead>
+                        <tr>
+                            <th colspan="4" class="txt-algn ">Second Term</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>Subject1</th>
+                            <th>Subject2</th>
+                            <th>Subject3</th>
+                            <th>Subject4</th>
+                        </tr>
+                        <tr>
+                            <td>OOP</td>
+                            <td>Dara Stucture</td>
+                            <td>OS</td>
+                            <td>Logic Design</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="wid1 txt-algn">
+                    <button class="ln-hgt mr-3 mt-4">Edit</button>
+                    <button class="ln-hgt mt-4">Delete</button>
+                </div>
+            </div>
+        </div>
+
+    </main>
+</body>
+<script src="./vendors/js/master.js"></script>
+
+</html>
